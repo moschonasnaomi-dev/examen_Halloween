@@ -1,0 +1,280 @@
+/* Basisinstellingen voor de pagina */
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #140d1e; /* Donkerpaarse achtergrond */
+  background-image: url("halloween-background-watercolor-illustration_454574-190.avif");
+  color: #fb7704;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Container om alles netjes in het midden te houden */
+.griezel-container {
+  max-width: 1200px;
+  margin: 0 auto; /* Centreert de container */
+  padding: 40px 20px;
+}
+
+/* =========================================
+   HERO SECTIE
+   ========================================= */
+.hero-sectie {
+  display: flex; /* Zorgt dat de tekst links staat */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.subtitel {
+  color: #46037d; /* paarse tekst */
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hoofdtitel {
+  font-size: 85px;
+  line-height: 0.9;
+  margin: 10px 0 20px 0;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
+}
+
+.tekst-wit {
+  color: #221401;
+}
+
+.tekst-oranje-gloed {
+  color: #d05a07;
+  text-shadow: 0 0 15px rgba(255, 106, 0, 0.6); /* Creëert het gloeiende effect */
+}
+
+.beschrijving {
+  color: #442302; /* bruine tekst */
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* -- Knoppen -- */
+.knoppen-groep {
+  display: flex;
+  gap: 15px; /* Ruimte tussen de knoppen */
+  margin-bottom: 40px;
+}
+
+.btn-primair {
+  background-color: #c274ef;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px; /* Ronde hoeken */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-secundair {
+  background-color: transparent;
+  color: #080808;
+  border: 1px solid #423057;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* -- Info Kaarten (Tijden, Zones, etc) -- */
+.info-kaarten {
+  display: flex;
+  gap: 15px;
+}
+
+.kaart {
+  background-color: rgba(230, 176, 255, 0.704); /* Zeer semi doorzichtig paars */
+  border: 1px solid rgb(63, 2, 85);
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column; /* Zet titel en subtekst onder elkaar */
+  min-width: 120px;
+}
+
+.kaart-titel {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.kaart-sub {
+  font-size: 12px;
+  color: #000000;
+}
+
+/* =========================================
+   NIEUWSBRIEF BANNER (Oranje blok)
+   ========================================= */
+.nieuwsbrief-banner {
+  background: linear-gradient(90deg, #fa7522 10%, #fcaf62 40%); /* Oranje verloop */
+  border-radius: 20px;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between; /* Links de tekst, rechts het formulier */
+  align-items: center;
+  color: #000; /* Zwarte tekst voor hoog contrast */
+}
+
+.nieuwsbrief-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Ruimte tussen icoon en tekst */
+}
+
+.nieuwsbrief-tekst h2 {
+  margin: 0 0 5px 0;
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+}
+
+.nieuwsbrief-tekst p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.nieuwsbrief-formulier {
+  display: flex;
+  gap: 10px;
+}
+
+.nieuwsbrief-formulier input {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  width: 250px;
+  background-color: #ede1d3; /* Crème kleurige achtergrond */
+  outline: none;
+}
+
+.nieuwsbrief-formulier button {
+  background-color: #24064d; /* Donkere knop */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* =========================================
+   FOOTER SECTIE
+   ========================================= */
+.site-footer {
+  background-color: #0b071069; /* Iets donkerder dan de hoofdachtergrond voor contrast */
+  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Subtiele lijn bovenaan de footer */
+  padding: 60px 0 20px 0;
+  margin-top: 60px; /* Ruimte tussen de content en de footer */
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Flexbox of Grid gebruiken we hier om de 4 kolommen netjes te verdelen */
+.footer-kolommen {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr; /* De eerste kolom is dubbel zo breed als de rest */
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* -- Kolom 1: Logo styling -- */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.logo-tekst {
+  line-height: 1.2;
+}
+
+.merknaam {
+  font-family: 'Georgia', serif; /* Zelfde sierlijke font als de hoofdtitel */
+  font-size: 24px;
+  font-weight: bold;
+  color: #e5e0d8;
+}
+
+.merk-sub {
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-adres {
+  font-style: normal; /* Haalt de standaard schuine tekst van address tags weg */
+  color: #f5f4f7;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* -- Kolommen 2, 3 en 4: Menu's -- */
+.footer-titel {
+  color: #f5b92e; 
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none; /* Verwijdert de bolletjes van de lijst */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #ece9ef;
+  text-decoration: none; /* Verwijdert de standaard onderstreping van links */
+  font-size: 14px;
+  transition: color 0.3s ease; /* Zorgt voor een soepele kleurovergang */
+}
+
+.footer-links a:hover {
+  color: #be31fb; /* Link wordt paars als je er met de muis overheen gaat */
+}
+
+/* -- Onderkant: Lijn en Copyright -- */
+.footer-lijn {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 0 25px 0;
+}
+
+.footer-onderkant {
+  display: flex;
+  justify-content: space-between; /* Zet de tekst links en rechts uit elkaar */
+  color: #ff7700;
+  font-size: 12px;
+}
+
+.footer-onderkant p {
+  margin: 0;
+}
